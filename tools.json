@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Arduino Uno",
+    "category": "Microcontroller",
+    "info": "Board voor elektronica projecten",
+    "website": "https://www.arduino.cc"
+  },
+  {
+    "name": "Raspberry Pi",
+    "category": "Computer",
+    "info": "Kleine computer voor projecten",
+    "website": "https://www.raspberrypi.com"
+  },
+  {
+    "name": "ESP32",
+    "category": "Microcontroller",
+    "info": "Wifi en Bluetooth ontwikkelbord",
+    "website": "https://www.espressif.com"
+  }
+]

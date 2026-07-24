@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechAI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleMenu()">☰</button>
+<h1>TechAI</h1>
+</header>
+
+
+<div id="menu">
+
+<h2>Menu</h2>
+
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('chat')">AI Chat</button>
+<button onclick="showPage('projects')">Projecten</button>
+<button onclick="showPage('tools')">Tools</button>
+<button onclick="showPage('settings')">Instellingen</button>
+
+</div>
+
+
+
+<main>
+
+
+<section id="home">
+
+<div class="card">
+<h2>Welkom bij TechAI</h2>
+<p>
+Technische AI voor projecten, tools en ideeën.
+</p>
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+<h3>AI Chat</h3>
+<p>Vraag technische hulp.</p>
+<button onclick="showPage('chat')">Open</button>
+</div>
+
+
+<div class="card">
+<h3>Projecten</h3>
+<p>Bewaar je projecten.</p>
+<button onclick="showPage('projects')">Open</button>
+</div>
+
+
+<div class="card">
+<h3>Tools</h3>
+<p>Zoek onderdelen.</p>
+<button onclick="showPage('tools')">Open</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="chat" class="hidden">
+
+<h2>AI Chat</h2>
+
+<div id="chatBox" class="card">
+Welkom bij TechAI.
+</div>
+
+<input id="chatInput" placeholder="Stel je vraag...">
+
+<button onclick="sendMessage()">
+Verstuur
+</button>
+
+</section>
+
+
+
+
+
+<section id="projects" class="hidden">
+
+<h2>Projecten</h2>
+
+<div class="card">
+
+<input id="projectName" placeholder="Project naam">
+
+<textarea id="projectInfo" placeholder="Beschrijving"></textarea>
+
+<button onclick="addProject()">
+Opslaan
+</button>
+
+</div>
+
+
+<div id="projectList"></div>
+
+</section>
+
+
+
+
+
+<section id="tools" class="hidden">
+
+<h2>Tools zoeken</h2>
+
+<input id="toolSearch" placeholder="Zoek onderdeel">
+
+<button onclick="searchTools()">
+Zoeken
+</button>
+
+
+<div id="toolResults"></div>
+
+</section>
+
+
+
+
+
+<section id="settings" class="hidden">
+
+<h2>Instellingen</h2>
+
+<div class="card">
+Binnenkort meer opties.
+</div>
+
+</section>
+
+<button onclick="googleLogin()">
+Inloggen met Google
+</button>
+</main>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

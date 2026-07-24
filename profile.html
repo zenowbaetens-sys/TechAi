@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profiel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Mijn profiel</h1>
+</header>
+
+<main>
+
+<div class="card">
+<h2>Je bent ingelogd</h2>
+<p>Profielpagina werkt.</p>
+
+<button onclick="logout()">
+Uitloggen
+</button>
+
+</div>
+
+</main>
+
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+
+<script>
+
+function logout(){
+
+firebase.auth().signOut();
+
+window.location.href="index.html";
+
+}
+
+</script>
+
+</body>
+</html>
